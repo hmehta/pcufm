@@ -1,0 +1,39 @@
+pcufm - perl coreutils filemanager
+
+This software is released under the GNU General Public License (GPL, http://www.gnu.org/copyleft/gpl.html) and comes with absolutely no warranty.
+
+Introduction
+pcufm is a lightweight curses coreutils filemanager. The main purpose is to easen up file operations with multiple files and shorten often longer and clumsy bash filemanaging sessions.
+Note: Please take into consideration that this software is nowhere near complete and should be considered early alpha. It should be stable enough for testing purposes tho.
+
+Requirements
+- Perl >= 5.10
+- Ncurses libraries
+  * Should be available via distributions package manager
+- CPAN Modules:
+  * Curses
+  * File::Copy::Recursive
+  (Note: These are most likely available via your distributions package manager, both modules have installers included in case)
+
+Features
+- Simple, yet effective interface
+- Lightweight and highly configurable
+- Themeable, progress/scrollbars
+- Searching files
+- Vi-like keybindings by default
+- Vi-style :commands
+- Tab-completion
+- Relatively gentle learning curve
+
+Commands
+- Commands are always executed on entry on the active selection bar or on all selected entries
+- move, copy, remove (normal + rmtree)
+- mkdir, renaming
+
+TODO
+- .mailcap support/internal MIME-handler (BLAARRGGHH!!1)
+- tab-completion (for files!?!)
+- regexp search
+- something liek find?
+- selections within directory structure?
+- better scalability when resizing terminal
